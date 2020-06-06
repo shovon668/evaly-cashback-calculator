@@ -171,3 +171,7 @@ details p.text {
   font-size: 14px !important;
   color: grey;
 }
+
+.alert-warning {
+  text-align: center !important;
+}
