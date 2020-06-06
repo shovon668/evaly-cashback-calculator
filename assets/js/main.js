@@ -47,8 +47,10 @@ submit.addEventListener("click", function (e) {
     quicker("#partialPayment .price", discountGet);
 
     // If discount is greater thn 100 BDT
-    quicker("#fullPayment .price", 0);
-
+    if (discountRate > 100){
+      quicker("#fullPayment .price", 0);
+    }
+    
     showHide("block"); // show
     reset.style.display = "block";
   }
