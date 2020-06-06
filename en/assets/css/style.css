@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'SolaimanLipi';
+  src: url('../fonts/SolaimanLipi.eot');
+  src: url('../fonts/SolaimanLipi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SolaimanLipi.ttf') format('truetype'),
+    url('../fonts/SolaimanLipi.woff') format('woff'),
+    url('../fonts/SolaimanLipi.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: SolaimanLipi, 'sans-serif' !important;
+}
+
+body,
+.btn,
+p,
+.form-control,
+input,
+label,
+.input-group-text {
+  font-size: 20px;
+}
+
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background: #c3232a;
+  border-color: #c3232a !important;
+}
+
+.form-control:active,
+.form-control:focus {
+  border-color: #c3232a;
+  box-shadow: none;
+}
+
+.jumbotron {
+  padding: 30px 0;
+}
+
+.jumbotron h1 {
+  font-size: 46px;
+  font-weight: bold;
+  color: #c3232a;
+}
+
+.jumbotron h5 {
+  color: #c3232a;
+}
+
+#calculator {
+  margin-top: 80px;
+}
+
+.card .card-header {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #ecf0f1;
+}
+
+.cashback,
+.price,
+.discount,
+.amount {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+footer .jumbotron {
+  padding: 20px 0;
+}
+
+footer .jumbotron p {
+  margin-bottom: 0;
+}
+
+footer a,
+footer a:hover {
+  color: #c3232a;
+}
+
+/*===============FAQ===============*/
+.faq-area {
+  padding-top: 50px;
+}
+
+.box {
+  width: 100%;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .3);
+}
+
+.box .heading {
+  background: #c3232a;
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+}
+
+.faqs {
+  padding: 0px 20px 20px;
+}
+
+::-webkit-details-marker {
+  float: right;
+  margin-top: 3px;
+  padding-left: 5px;
+}
+
+details {
+  background: #f6f6f6;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+
+details summary {
+  outline: none;
+  font-size: 22px;
+}
+
+details p.text {
+  font-size: 18px;
+  margin-top: 5px;
+  padding-top: 10px;
+  border-top: 1px solid #7f8c8d;
+}
+
+
+@media all and (max-width: 480px) {
+  .jumbotron h1 {
+    font-size: 28px;
+  }
+
+  .jumbotron h5 small {
+    font-size: 14px;
+  }
+
+  #calculator {
+    margin-top: 60px;
+  }
+
+  footer {
+    margin-top: 50px;
+  }
+}
+
+.text-footer > p {
+  text-align: center;
+  font-size: 14px !important;
+  color: grey;
+}
