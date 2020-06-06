@@ -28,13 +28,7 @@ submit.addEventListener("click", function (e) {
   let cashbackAmount = (productPrice * (discountRate / 100)).toFixed(0);
   let cashbackFullPay = productPrice - cashbackAmount;
 
-  if (discountRate == 0 || discountRate > 100) {
-    document.querySelector(".message1").style.display = "block";
-    showHide("none"); // Hide
-    setTimeout(function () {
-      document.querySelector(".message1").style.display = "none";
-    }, 3000);
-  } else if (discountRate.length == 0 || discountRate < 0) {
+  if (discountRate.length == 0 || discountRate <= 0 || !discountRate) {
     document.querySelector(".message2").style.display = "block";
     showHide("none"); // Hide
     setTimeout(function () {
@@ -51,6 +45,9 @@ submit.addEventListener("click", function (e) {
     quicker("#partialPayment .amount", discountPayment);
     quicker("#partialPayment .discount", discountRate);
     quicker("#partialPayment .price", discountGet);
+
+    // If discount is greater thn 100 BDT
+    quicker("#fullPayment .price", 0);
 
     showHide("block"); // show
     reset.style.display = "block";
